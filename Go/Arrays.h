@@ -9,6 +9,10 @@
 #ifndef __Go__Arrays__
 #define __Go__Arrays__
 
-#include <iostream>
+const int MAX_BOARD_SIZE = 19;
+const int WIDTH = MAX_BOARD_SIZE + 1;
+const int FIRST = WIDTH + 1;
+const int LAST = MAX_BOARD_SIZE + (MAX_BOARD_SIZE*WIDTH);
+const int MAX_SIZE = WIDTH * (WIDTH+1);
 
 #endif /* defined(__Go__Arrays__) */
