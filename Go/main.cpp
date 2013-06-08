@@ -18,6 +18,7 @@ using namespace MonteCarlo;
 using namespace Util;
 
 const int NR_PLAYOUTS = 10000000;
+const int NR_THREADS = 8;
 
 void playout()
 {
@@ -35,6 +36,21 @@ void playout()
 //            mc.playMove(xy);
 //        }
     }
+}
+
+void multiplePlayout()
+{
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_apply(NR_THREADS, queue, ^(size_t i)
+    {
+        MonteCarloPluginAdministration mc;
+        
+        for (int j=0; j<NR_PLAYOUTS/NR_THREADS; j++)
+        {
+            mc.playout();
+            mc.clear();
+        }        
+    });
 }
 
 int main(int argc, const char * argv[])
@@ -61,11 +77,11 @@ int main(int argc, const char * argv[])
     cout << "Clocks per second: " << CLOCKS_PER_SEC << endl;
     cout << "Time: " << clock() << endl;
     clock_t start = clock();
-    playout();
+    multiplePlayout();
     clock_t end = clock();
     double timeDiff = (double)(end - start)/(double)CLOCKS_PER_SEC;
     cout << "Diff: " << timeDiff << endl;
-    cout << "Nr kpos/s. = " << (NR_PLAYOUTS/timeDiff)/1000.0 << endl;
+    cout << "Nr kpos/s. = " << (NR_PLAYOUTS/timeDiff) << endl;
     
     return 0;
 }

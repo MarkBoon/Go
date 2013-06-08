@@ -68,6 +68,7 @@ namespace MonteCarlo
         BoardMarker _boardMarker;
 
     public:
+        MonteCarloPluginAdministration();
         MonteCarloPluginAdministration(int boardSize);
         
         void clear();

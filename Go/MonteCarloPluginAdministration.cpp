@@ -18,6 +18,11 @@ using namespace Util;
 
 namespace MonteCarlo
 {
+    MonteCarloPluginAdministration::MonteCarloPluginAdministration() : MonteCarloPluginAdministration(9)
+    {
+        
+    }
+    
     MonteCarloPluginAdministration::MonteCarloPluginAdministration(int boardSize) :
         _board(boardSize),
         _emptyPoints(boardSize),
