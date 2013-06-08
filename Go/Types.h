@@ -9,8 +9,11 @@
 #ifndef Go_Types_h
 #define Go_Types_h
 
-typedef char Byte;
-typedef short Word;
-typedef short Coordinate;
+namespace Go
+{
+    typedef char Byte;
+    typedef short Word;
+    typedef short Coordinate;
+}
 
 #endif

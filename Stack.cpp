@@ -1,9 +1,9 @@
 //
-//  Arrays.cpp
+//  Stack.cpp
 //  Go
 //
-//  Created by Mark Boon on 6/6/13.
+//  Created by Mark Boon on 6/7/13.
 //  Copyright (c) 2013 Mark Boon. All rights reserved.
 //
 
-#include "Arrays.h"
+#include "Stack.h"

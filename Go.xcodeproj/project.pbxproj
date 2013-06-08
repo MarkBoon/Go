@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		4039D37917618FE1001E0C2C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4039D37817618FE1001E0C2C /* main.cpp */; };
 		4039D37B17618FE1001E0C2C /* Go.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4039D37A17618FE1001E0C2C /* Go.1 */; };
+		C37760F41762686F0066E86C /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37760ED1762686F0066E86C /* Array.cpp */; };
+		C37760F51762686F0066E86C /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37760EF1762686F0066E86C /* Board.cpp */; };
+		C37760F61762686F0066E86C /* MonteCarloPluginAdministration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37760F11762686F0066E86C /* MonteCarloPluginAdministration.cpp */; };
+		C37760FB176282C50066E86C /* Assert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37760F9176282C50066E86C /* Assert.cpp */; };
+		C37760FF17628D930066E86C /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37760FD17628D930066E86C /* Stack.cpp */; };
+		C3776103176298AA0066E86C /* PointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3776101176298A90066E86C /* PointSet.cpp */; };
+		C3776106176299560066E86C /* Points.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3776104176299560066E86C /* Points.cpp */; };
+		C377610A1762AB2C0066E86C /* MersenneTwister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37761081762AB2C0066E86C /* MersenneTwister.cpp */; };
+		C377610C1762B03D0066E86C /* FourCursor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C377610B1762B03D0066E86C /* FourCursor.cpp */; };
+		C377610F1762C16F0066E86C /* BoardMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C377610D1762C16F0066E86C /* BoardMarker.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +38,29 @@
 		4039D37517618FE1001E0C2C /* Go */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Go; sourceTree = BUILT_PRODUCTS_DIR; };
 		4039D37817618FE1001E0C2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4039D37A17618FE1001E0C2C /* Go.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Go.1; sourceTree = "<group>"; };
+		C37760ED1762686F0066E86C /* Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
+		C37760EE1762686F0066E86C /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		C37760EF1762686F0066E86C /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		C37760F01762686F0066E86C /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		C37760F11762686F0066E86C /* MonteCarloPluginAdministration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonteCarloPluginAdministration.cpp; sourceTree = "<group>"; };
+		C37760F21762686F0066E86C /* MonteCarloPluginAdministration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonteCarloPluginAdministration.h; sourceTree = "<group>"; };
+		C37760F31762686F0066E86C /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		C37760F7176277D20066E86C /* GoConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoConstants.h; sourceTree = "<group>"; };
+		C37760F9176282C50066E86C /* Assert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Assert.cpp; path = Go/Assert.cpp; sourceTree = "<group>"; };
+		C37760FA176282C50066E86C /* Assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Assert.h; path = Go/Assert.h; sourceTree = "<group>"; };
+		C37760FD17628D930066E86C /* Stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
+		C37760FE17628D930066E86C /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		C377610017628FA80066E86C /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		C3776101176298A90066E86C /* PointSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointSet.cpp; sourceTree = "<group>"; };
+		C3776102176298A90066E86C /* PointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointSet.h; sourceTree = "<group>"; };
+		C3776104176299560066E86C /* Points.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Points.cpp; sourceTree = "<group>"; };
+		C3776105176299560066E86C /* Points.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Points.h; sourceTree = "<group>"; };
+		C37761071762A3480066E86C /* FourCursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourCursor.h; sourceTree = "<group>"; };
+		C37761081762AB2C0066E86C /* MersenneTwister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MersenneTwister.cpp; sourceTree = "<group>"; };
+		C37761091762AB2C0066E86C /* MersenneTwister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MersenneTwister.h; sourceTree = "<group>"; };
+		C377610B1762B03D0066E86C /* FourCursor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FourCursor.cpp; sourceTree = "<group>"; };
+		C377610D1762C16F0066E86C /* BoardMarker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoardMarker.cpp; sourceTree = "<group>"; };
+		C377610E1762C16F0066E86C /* BoardMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardMarker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +77,7 @@
 		4039D36C17618FE1001E0C2C = {
 			isa = PBXGroup;
 			children = (
+				C37760FC17628D7C0066E86C /* Util */,
 				4039D37717618FE1001E0C2C /* Go */,
 				4039D37617618FE1001E0C2C /* Products */,
 			);
@@ -60,10 +94,40 @@
 		4039D37717618FE1001E0C2C /* Go */ = {
 			isa = PBXGroup;
 			children = (
+				C37760ED1762686F0066E86C /* Array.cpp */,
+				C37760EE1762686F0066E86C /* Array.h */,
+				C37760EF1762686F0066E86C /* Board.cpp */,
+				C37760F01762686F0066E86C /* Board.h */,
+				C37760F11762686F0066E86C /* MonteCarloPluginAdministration.cpp */,
+				C37760F21762686F0066E86C /* MonteCarloPluginAdministration.h */,
+				C37760F31762686F0066E86C /* Types.h */,
 				4039D37817618FE1001E0C2C /* main.cpp */,
 				4039D37A17618FE1001E0C2C /* Go.1 */,
+				C37760F7176277D20066E86C /* GoConstants.h */,
+				C3776101176298A90066E86C /* PointSet.cpp */,
+				C3776102176298A90066E86C /* PointSet.h */,
+				C3776104176299560066E86C /* Points.cpp */,
+				C3776105176299560066E86C /* Points.h */,
+				C37761071762A3480066E86C /* FourCursor.h */,
+				C377610B1762B03D0066E86C /* FourCursor.cpp */,
+				C377610D1762C16F0066E86C /* BoardMarker.cpp */,
+				C377610E1762C16F0066E86C /* BoardMarker.h */,
 			);
 			path = Go;
+			sourceTree = "<group>";
+		};
+		C37760FC17628D7C0066E86C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C37760F9176282C50066E86C /* Assert.cpp */,
+				C37760FA176282C50066E86C /* Assert.h */,
+				C37760FD17628D930066E86C /* Stack.cpp */,
+				C37760FE17628D930066E86C /* Stack.h */,
+				C377610017628FA80066E86C /* Macros.h */,
+				C37761081762AB2C0066E86C /* MersenneTwister.cpp */,
+				C37761091762AB2C0066E86C /* MersenneTwister.h */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +182,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4039D37917618FE1001E0C2C /* main.cpp in Sources */,
+				C37760F41762686F0066E86C /* Array.cpp in Sources */,
+				C37760F51762686F0066E86C /* Board.cpp in Sources */,
+				C37760F61762686F0066E86C /* MonteCarloPluginAdministration.cpp in Sources */,
+				C37760FB176282C50066E86C /* Assert.cpp in Sources */,
+				C37760FF17628D930066E86C /* Stack.cpp in Sources */,
+				C3776103176298AA0066E86C /* PointSet.cpp in Sources */,
+				C3776106176299560066E86C /* Points.cpp in Sources */,
+				C377610A1762AB2C0066E86C /* MersenneTwister.cpp in Sources */,
+				C377610C1762B03D0066E86C /* FourCursor.cpp in Sources */,
+				C377610F1762C16F0066E86C /* BoardMarker.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +215,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -216,6 +290,7 @@
 				4039D38017618FE1001E0C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
