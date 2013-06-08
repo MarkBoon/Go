@@ -11,20 +11,20 @@
 #include "Assert.h"
 #include "Stack.h"
 #include "MonteCarloPluginAdministration.h"
-#include <dispatch/dispatch.h>
+#include <thread>
 
 using namespace Go;
 using namespace MonteCarlo;
 using namespace Util;
 
 const int NR_PLAYOUTS = 10000000;
-const int NR_THREADS = 8;
+const int NR_THREADS = 3;
 
-void playout()
+void playout(int nrPlayouts)
 {
     MonteCarloPluginAdministration mc(9);
     
-    for (int i=0; i<NR_PLAYOUTS; i++)
+    for (int i=0; i<nrPlayouts; i++)
     {
         mc.playout();
         mc.clear();
@@ -36,21 +36,22 @@ void playout()
 //            mc.playMove(xy);
 //        }
     }
+    cout << "Finished with " << nrPlayouts << endl;
 }
 
 void multiplePlayout()
 {
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_apply(NR_THREADS, queue, ^(size_t i)
+    thread* threads[NR_THREADS];
+    int playouts = NR_PLAYOUTS/NR_THREADS;
+    
+    for (int t=0; t<NR_THREADS; t++)
     {
-        MonteCarloPluginAdministration mc;
-        
-        for (int j=0; j<NR_PLAYOUTS/NR_THREADS; j++)
-        {
-            mc.playout();
-            mc.clear();
-        }        
-    });
+        threads[t] = new thread(playout,playouts);
+    }
+    for (int t=0; t<NR_THREADS; t++)
+    {
+        threads[t]->join();
+    }
 }
 
 int main(int argc, const char * argv[])
